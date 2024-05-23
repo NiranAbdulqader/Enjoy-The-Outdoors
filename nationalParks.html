@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button and Dropdown</title>
+</head>
+
+<body>
+    <h1>Select Option</h1>
+    <form id="optionForm">
+        <label for="option1"> Park Location:</label>
+        <input type="radio" id="option1" name="selectedOption" value="option1">
+        <br>
+        <label for="option2"> Park Type:</label>
+        <input type="radio" id="option2" name="selectedOption" value="option2">
+        <br>
+        <br>
+        <select id="optionDropdown" disabled>
+            <option value="">Select Option</option>
+        </select>
+    </form>
+    <div id="parkDetails"></div> <!-- Placeholder for the table -->
+    <script src="nationalParks.js"></script>
+
+</body>
+
+</html>
