@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio Button and Dropdown</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="mountain.css">
+    
 </head>
-
 <body>
-    <h1>Select Mountain</h1>
-    <select id="mountainSelect">
+    <div class="icons">
+        <h2 class="logo"><a href="index.html">Explore Mountains Details<span>
+            ..Enjoy The Outdoors</span></a></h2>
+    </div>
+    
+    <div class="menu">
+        <!--Header-->
+        <ul>
+            <li><a href="index.html">Home</a></li> <!--home page-->
+            <li><a href="nationalParks.html">National Parks</a></li><!--National Parks page-->
+            <li><a href="mountainsInfo.html">Mountains Details </a></li><!--Mountains page-->
+            <li class="dropdown">
+                <a href="resources.html" class="dropbtn">Resources</a>
+                <div class="dropdown-content">
+                  <a href="rent.html">Rent a Car</a>
+                  <a href="tip.html">Tips</a>
+                  <a href="Environmental Awareness.html">Environmental Awareness</a>
+                </li>
+        </ul>
+    </div>
+ 
+    </div>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="Minimalist Beautiful Life Quotes Video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="introText">
+        <p>Mountains are the world’s “water towers,” providing 60-80% of all freshwater resources for our planet. At least half of the world’s population depends on mountain ecosystem services to survive – not only water but also food and clean energy.</p>
+    </div>
+     <h4>Select Mountain</h4>
+        <select id="mountainSelect">
         <option value="">Select a Mountain</option>
-    </select>
+     </select>
     <div id="mountainInfo"></div>
-
-    <script src="mountainsInfo.js"></script>
+     </div>
+    </body>
+    
+<script src="mountainsInfo.js"></script>
 
 </body>
 
+</html>
+</body>
 </html>

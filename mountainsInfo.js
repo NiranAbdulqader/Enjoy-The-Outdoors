@@ -532,19 +532,7 @@ const mountainsArray = [
     }
 ];
 
-// // Create a dropdown menu
-// const dropdown = document.createElement("Select");
 
-// // Add an option for each mountain
-// mountainsArray.forEach(mountain => {
-//     const option = document.createElement("option");
-//     option.value = mountain.name;
-//     option.text = mountain.name;
-//     dropdown.appendChild(option);
-// });
-
-// // Add the dropdown to the document body
-// document.body.appendChild(dropdown);
 
 const mountainSelect = document.getElementById('mountainSelect');
 const mountainInfo = document.getElementById('mountainInfo');
@@ -573,3 +561,17 @@ mountainSelect.addEventListener('change', () => {
         mountainInfo.innerHTML = '';
     }
 });
+
+// // Create a dropdown menu
+// const dropdown = document.createElement("Select");
+
+// // Add an option for each mountain
+// mountainsArray.forEach(mountain => {
+//     const option = document.createElement("option");
+//     option.value = mountain.name;
+//     option.text = mountain.name;
+//     dropdown.appendChild(option);
+// });
+
+// // Add the dropdown to the document body
+// document.body.appendChild(dropdown);

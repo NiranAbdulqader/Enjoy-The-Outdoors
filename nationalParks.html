@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio Button and Dropdown</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="national.css">
+    
 </head>
-
 <body>
-    <h1>Select Option</h1>
+    <div class="icons">
+        <h2 class="logo"><a href="index.html">Explore National Parks<span>
+            ..Enjoy The Outdoors</span></a></h2>
+    </div>
+    
+    <div class="menu">
+        <!--Header-->
+        <ul>
+            <li><a href="index.html">Home</a></li> <!--home page-->
+            <li><a href="nationalParks.html">National Parks</a></li><!--National Parks page-->
+            <li><a href="mountainsInfo.html">Mountains Details  </a></li><!--Mountains page-->
+            <li class="dropdown">
+                <a href="resources.html" class="dropbtn">Resources</a>
+                <div class="dropdown-content">
+                  <a href="rent.html">Rent a Car</a>
+                  <a href="tip.html">Tips</a>
+                  <a href="Environmental Awareness.html">Environmental Awareness</a>
+                </li>
+        </ul>
+    </div>
+    <div class="header-overlay">
+    </div>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="Green and White Save the Forest YouTube Video Outro.mp4" type="video/mp4">
+        </video>
+        
+    </div>
+</div>
+<div class="content">
+    <h3>Find Locations and Park's Type by Selecting from Options</h3>
     <form id="optionForm">
-        <label for="option1"> Park Location:</label>
+        <label for="option1">Park Location:</label>
         <input type="radio" id="option1" name="selectedOption" value="option1">
         <br>
-        <label for="option2"> Park Type:</label>
+        <label for="option2">Park Type:</label>
         <input type="radio" id="option2" name="selectedOption" value="option2">
-        <br>
-        <br>
+        <br><br>
         <select id="optionDropdown" disabled>
             <option value="">Select Option</option>
         </select>
     </form>
     <div id="parkDetails"></div> <!-- Placeholder for the table -->
+</div>
     <script src="nationalParks.js"></script>
 
 </body>
 
+</html>
+</body>
 </html>
